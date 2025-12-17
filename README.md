@@ -119,55 +119,6 @@ Then navigate to `http://localhost:8000/todolist.html`
 | DELETE | `/delete-item/:id` | Delete a todo item |
 | PUT | `/update-item/:id` | Update a todo item |
 
-## How to Push to GitHub
-
-### 1. Initialize Git Repository (if not already done)
-
-```bash
-cd Todo
-git init
-```
-
-### 2. Create a `.gitignore` File
-
-```bash
-echo node_modules/ > .gitignore
-echo .env >> .gitignore
-echo .DS_Store >> .gitignore
-```
-
-### 3. Stage and Commit Files
-
-```bash
-git add .
-git commit -m "Initial commit: Add todo list application"
-```
-
-### 4. Create a GitHub Repository
-
-1. Go to [GitHub](https://github.com) and log in
-2. Click the "+" icon in the top right and select "New repository"
-3. Name it `Todo`
-4. Do **NOT** initialize with README, .gitignore, or license (you already have them)
-5. Click "Create repository"
-
-### 5. Add Remote and Push
-
-```bash
-git remote add origin https://github.com/your-username/Todo.git
-git branch -m main
-git push -u origin main
-```
-
-
-
-Example `.env`:
-```
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=todo
-```
 
 ## Contributing
 
